@@ -2,7 +2,7 @@ import psycopg2
 try:
     connection = psycopg2.connect(user="webadmin",
                                   password="NAMtmy71443",
-                                  host="10.101.1.34",
+                                  #host="10.101.1.34",
                                   host="node7540-testdev.app.ruk-com.cloud",
                                   port="11070",
                                   database="CloudDB")
