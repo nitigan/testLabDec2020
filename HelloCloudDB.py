@@ -6,8 +6,8 @@ from flask_marshmallow import Marshmallow
 app = Flask(__name__)
 
 # Database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://webadmin:NAMtmy71443@node7540-testdev.app.ruk-com.cloud:11070/CloudDB'
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://webadmin:XGMxcq57201@10.101.1.34:5432/CloudDB'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://webadmin:NAMtmy71443@node7540-testdev.app.ruk-com.cloud:11070/CloudDB'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://webadmin:NAMtmy71443@10.100.2.146:5432/CloudDB'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # Init db
 db = SQLAlchemy(app)
